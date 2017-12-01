@@ -1,0 +1,18 @@
+<nav class="header">
+  <div class="header-logo">
+    {{#link-to "mainpage"}}<img src="assets/img/logo.png">{{/link-to}}
+  </div>
+  <ul class="navi-tabs">
+    {{#each tabs as |tab|}}
+      <li class="navi-tab {{if tab.selected 'selected'}}">
+        {{#if tab.selected}}
+          <span class="selected-text">{{tab.text}}</span>
+        {{else}}
+          {{#link-to tab.path}}
+            {{tab.text}}
+          {{/link-to}}
+        {{/if}}
+      </li>
+    {{/each}}
+  </ul>
+</nav>

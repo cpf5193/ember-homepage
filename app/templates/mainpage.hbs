@@ -1,0 +1,37 @@
+{{nav-bar selectedTab="home"}}
+<div class="mainSection projects">
+  <div class="row">
+    <figure class="portal">
+      {{#link-to 'projects'}}
+        <img src="assets/img/wordsolver.png" alt="Projects">
+        <figcaption> Projects </figcaption>
+      {{/link-to}}
+    </figure>
+  </div>
+  <div class="row middle-row">
+    <figure class="portal about">
+      {{#link-to 'about'}}
+        <img src="assets/img/about_pictures/papas_wedding.jpg" alt="self portrait">
+        <figcaption> About Me </figcaption>
+      {{/link-to}}
+    </figure>
+    <p class="main-text">
+      <span class='welcome'>Welcome!</span>
+      <span>This page is a showcase of my progress in programming and other various aspects of my life. Enjoy!</span>
+    </p>
+    <figure class="portal resume">
+      <a href="Resume.pdf">
+        <img src="assets/img/resume.png" alt="resume">
+        <figcaption> Resume </figcaption>
+      </a>
+    </figure>
+  </div>
+  <div class="row">
+    <figure class="portal other">
+      {{#link-to 'other'}}
+        <img src="assets/img/trumpet.jpg" alt="Other">
+        <figcaption> Other </figcaption>
+      {{/link-to}}
+    </figure>
+  </div>
+</div>

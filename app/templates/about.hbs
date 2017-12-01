@@ -1,0 +1,33 @@
+{{nav-bar selectedTab="about"}}
+<div class="content">
+  <div class="topBanner">
+    <h1>About Me</h1>
+  </div>
+
+  <div class="mainSection">
+    {{#twbs-carousel as |carousel|}}
+      {{#carousel.slide classNames="active" as |slide|}}
+        {{slide.img src="assets/img/about_pictures/beach.jpg" alt="Beach"}}
+      {{/carousel.slide}}
+      {{#carousel.slide as |slide|}}
+        {{slide.img src="assets/img/about_pictures/something1.jpg" alt="Beach 2"}}
+      {{/carousel.slide}}
+      {{#carousel.slide as |slide|}}
+        {{slide.img src="assets/img/about_pictures/papas_wedding.jpg" alt="Wedding"}}
+      {{/carousel.slide}}
+      {{#carousel.slide as |slide|}}
+        {{slide.img src="assets/img/about_pictures/with_mom.jpg" alt="Mom"}}
+      {{/carousel.slide}}
+    {{/twbs-carousel}}
+    <p>Hi, My name is Christon(Chip) Fukuhara. I am a graduate of the University of Washington
+    Computer Science program, class of 2015. I began programming in senior year of high school in Java,
+    and began web programming in Autumn of 2012. Other than coding, 
+    I play the trumpet, am involved in my church, and enjoy games like foosball, baseball, and ping-pong.
+    I am currently employed at Yahoo as a front-end software developer creating Ember.js applications.
+    With my programming abilities I would like to someday help create a medical system 
+    which is easy to use for medical record-keeping and transferring, so that hospitals and clinics can
+    serve more patients in need without the hassle of complex medical software.
+    I hope you enjoy exploring my site!
+    </p>
+  </div>
+</div>

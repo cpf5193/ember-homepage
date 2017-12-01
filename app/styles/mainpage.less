@@ -1,0 +1,68 @@
+.mainSection {
+  text-align: center;
+  padding-bottom: 25px;
+  figure {
+    &.portal {
+      display: inline-block;
+      width: 215px;
+      height: 215px;
+      margin: 10px;
+      padding: 0px;
+      border-radius: 130px;
+      background-color: #FFF;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      img {
+        width: 215px;
+        height: 215px;
+        padding: 0px;
+        border-radius: 130px;
+        border: 10px solid #DDD;
+      }
+    }
+    &:hover {
+      box-shadow: 2px 2px 6px #555;
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    figcaption {
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 5px;
+      color: white;
+    }
+  }
+  .middle-row {
+    margin: -2% 0;
+    .portal {
+      margin: 0 10%;
+      a {
+        text-decoration: none;
+      }
+    }
+    .main-text {
+      width: 250px;
+      color: white;
+      vertical-align: top;
+      margin-top: 80px;
+      span {
+        line-height: 20px;
+      }
+      .welcome {
+        display: block;
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+    }
+    figure, p {
+      display: inline-block;
+    }
+  }
+}
